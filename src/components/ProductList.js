@@ -4,6 +4,8 @@ import ProductItem from "./ProductItem";
 import SearchBar from "./SearchBar";
 // Data
 import products from "../products";
+import { Helmet } from "react-helmet";
+
 
 const ProductList = () => {
 
@@ -17,6 +19,9 @@ const ProductList = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Product List</title>
+      </Helmet>
       <SearchBar setQuery={setQuery} />
       <div className="listWrapper">{productList}</div>
     </>
