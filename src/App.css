@@ -71,4 +71,8 @@ header{
     font-size: 20px;
     color: black;
     text-decoration: none;
+    align-items: center;
+}
+header img{
+    width: 200px;
 }
